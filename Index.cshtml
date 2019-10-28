@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+        <div class="container">
+            <section class="row" id="tmHome">
+                <div class="col-10 tm-home-container ">
+                    <div class="text-white tm-home-left">
+                        @*<p class="text-uppercase tm-slogan">This is me</p>
+                            <hr class="tm-home-hr" />*@
+                        <!--<h2 class="tm-home-title">Download my resume</h2>-->
+                        <p class="tm-home-text">
+                            I love to create and the freedom to succeed or fail. I tend to be a motivator, driven to find answers, great in support roles and add a little bit of humor to the day.<br /><br />
+                            In the past few years, I have had a wide range of experiences both in the military and the civilian world that give me a unique perspective. In the military, I was a heavy equipment vehicle operator, which basically means I drove big trucks.  My deployments overseas taught me the importance of adaptability and flexibility, especially when working in teams.  I also had the opportunity to work for Disney ABC Television where I was given a variety of responsibilities and put in new situations everyday where I learned to take direction and follow through under pressure.
+                            <br /><br />
+                            These experiences have contributed to my strong work ethic and given me an ability to adapt in such a way that I can easily balance multiple roles and assignments.  I’m excited to start a career in the web development field because I love to create and the entire process that goes with it. I believe in enjoying what you do. I especially believe in enjoying who you work with and for. I look forward to working for a company with a culture that matches my own enthusiasm for quality of work and product output.  I hope to be able to continue to learn from the people I am surrounded by and grow a little more each day.
+                        </p>
+                        @*<a href="https://drive.google.com/file/d/1ZsHEGvMKDBfEAEGBAgrMk6pFdvnrbah_/view?usp=sharing" target="_blank" id="homeBtn" class="btn btn-primary">Download my resume <i class="fa fa-download"></i></a>*@
+                    </div>
+                    @*<div class="tm-home-right">
+                            <img src="~/Content/img/mobile-screen.png" alt="App on Mobile mockup" />
+                        </div>*@
+                </div>
+            </section>
+        </div>
+
+@section scripts{
+    <script>
+        $(function () {
+
+            //$('.navbar-nav > li a').each(function () {
+            $('#navbarNav ul li').each(function () {
+                if ($(this).find('a').attr('href') == window.location.pathname) {
+                    $(this).addClass('active');
+                }
+                //    if ($(this).attr('href') == window.location.pathname) {
+                //      $('nav-item').addClass('active');
+                //   }
+                //});
+            });
+    </script>
+}

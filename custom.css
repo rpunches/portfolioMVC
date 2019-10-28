@@ -1,0 +1,171 @@
+﻿/*LAYOUT*/
+body, p { 
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+ font-family: 'Slabo 27px', serif;
+}
+
+.brownText {
+    color: #333436;
+}
+
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+
+#typePic {
+    background: url("../img/type.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.tm-services-header {
+    padding: 65px 15px 37px 15px;
+}
+
+.navbar-nav {
+    font-family: 'Slabo 27px', serif;
+    font-weight:700;
+}
+
+
+/*HOME PAGE*/
+.tm-home-text {
+    background-color: rgba(15, 29, 32, 0.76);
+    padding: 1em;
+}
+
+.tm-brand-icon {
+    margin-left: 25px;
+}
+
+.tm-home-left {
+    max-width: none;
+}
+
+.tm-home-text {
+    margin-bottom: 15px;
+}
+
+#homeBtn {
+    padding: 5px;
+    font-size: inherit;
+    float: right;
+    margin-right: -50px;
+}
+
+/*RESUME PAGE*/
+.tm-about-page-title {
+    font-size: 2.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tm-resume-hr {
+    border-top-color: white;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+#tmAbout {
+    padding-bottom: 40px;
+}
+
+.tm-about-box {
+    max-width: none;
+}
+
+.strongFont {
+    font-weight: bold;
+}
+
+.tm-about-description {
+    margin-bottom: 0;
+}
+
+.tm-about-box ul li {
+    font-size: .9em;
+}
+
+.negMargin {
+    margin-left: -30px;
+}
+
+.tm-military {
+    float: right;
+}
+
+.tm-app-feature-box {
+    height: 350px;
+}
+
+.underConst {
+    font-size: .9em;
+    font-style: italic;
+}
+
+/*CLASSMATES*/
+#classParaPic {
+    background-image: url("../img/ice-mountain.jpg");
+}
+
+.img-classmate {
+    max-width: 180px;
+    height: auto;
+}
+
+.tm-testimonial-box {
+    max-height: 415px;
+}
+
+
+/*PROJECTS*/
+#tmServices .tabs a {
+    padding: 0;
+}
+
+#tmServices .tabs .icon-wrap {
+    border: none;
+}
+
+.tm-services-page-title {
+    padding-bottom: 0;
+}
+
+.webBox, .marketingBox, .videoBox, .logoBox, .eventBox {
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+    .webBox img,
+    .marketingBox img,
+    .videoBox img,
+    .logoBox img,
+    .eventBox img {
+        width: 135px;
+        height: auto;
+    }
+
+.gallery-item {
+    display: contents;
+}
+
+/*CONTACT PAGE*/
+.contactBox {
+    font-size: 2em;
+}
+
+#contactDetails p {
+    font-family: 'Slabo 27px', serif;
+    font-weight: 500;
+    color: white;
+    font-size: 1.5em;
+}
+
+/*EMAIL CONFIRM*/
+.containerConfirm{
+    min-height:540px;
+}

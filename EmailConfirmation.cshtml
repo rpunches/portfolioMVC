@@ -1,0 +1,20 @@
+﻿@model PersonalPortfolioMVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "EmailConfirmation";
+}
+
+
+    <div class="container containerConfirm">
+        <section class="row" id="tmHome">
+            <div class="col-12 tm-home-container tm-home-text">
+                <div class="text-white tm-home-left">
+                    <h2 style="margin-bottom:0">Thank you!</h2>
+                    <h4>Your message was sent:</h4>
+                    <p >@Model.Message</p>
+                    <h4>Thank you for contacting me!  <br />I will respond to your message as soon as possible to the email @Model.Email.</h4>
+                </div>
+            </div>
+        </section>
+    </div>
+

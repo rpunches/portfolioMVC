@@ -1,0 +1,79 @@
+﻿@model PersonalPortfolioMVC.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Contact";
+}
+
+<section class="row" id="tmServices">
+    <div class="col-12">
+
+        <div class="tm-bg-black-transparent text-center tm-services-header">
+            <h2 class="text-uppercase tm-services-page-title tm-testimonials-page-title">@ViewBag.Title</h2>
+            <hr class="tm-resume-hr">
+        </div>
+
+    </div>
+</section>
+
+<section class="row tm-contact-row">
+    <div class="col-lg-6 tm-contact-col-left">
+
+
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+            <form id="tmContactForm" class="tm-bg-black-transparent tm-contact-form">
+                <div class="form-group">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control rounded-0 border-top-0 border-right-0 border-left-0", placeholder = "Name" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control rounded-0 border-top-0 border-right-0 border-left-0", placeholder = "Email" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+                <div class="form-group">
+                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control rounded-0 border-top-0 border-right-0 border-left-0", placeholder = "Message" } })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="text-right">
+                    <button type="submit" class="btn btn-primary tm-btn-submit rounded-0">
+                        Send
+                    </button>
+                </div>
+            </form>
+        }
+    </div>
+
+
+    @*<input type="submit" value="Create" class="btn btn-default" />*@
+
+    <div class="col-lg-6 tm-contact-col-right">
+        <div class="tm-bg-black-transparent tm-contact-text">
+
+            <i class="mx-auto mb-5 fas fa-3x fa-address-card tm-app-feature-icon"></i>
+
+            @*<h3 class="tm-service-tab-title contactBox">Rachel Punches</h3>*@
+            <div id="contactDetails">
+                <p><i class="fas fa-envelope-open"></i>   rpunches@gmail.com</p>
+                <a href="https://linkedin.com/in/rachel-punches/" target="_blank"><p><i class="fab fa-linkedin"></i>   linkedin.com/in/rachel-punches</p></a>
+                <a href="https://github.com/rpunches" target="_blank"><p><i class="fab fa-github"></i>  github.com/rpunches</p></a>
+            </div>
+        </div>
+
+    </div>
+  
+</section>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@*@Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+    @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })*@
